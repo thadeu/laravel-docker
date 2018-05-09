@@ -15,10 +15,24 @@ services:
       DB_DATABASE: laravel_docker
       DB_USERNAME: postgres
       DB_PASSWORD: postgres
+  
+  # mysql:
+  #   image: mysql:5.7
+  #   ports:
+  #     - 13306:3306
+  #   environment:
+  #     MYSQL_DATABASE: laravel_docker
+  #     MYSQL_USER: app
+  #     MYSQL_PASSWORD: password
+  #     MYSQL_ROOT_PASSWORD: password
+
+  # redis:
+  #   image: redis:4.0-alpine
+  #   ports:
+  #     - 16379:6379
 
   postgres:
     image: postgres:9.5
-    restart: always
     volumes:
       - "./.data/db:/var/lib/postgresql"
     ports:

@@ -1,4 +1,4 @@
-# Laravel Docker based in vhost.conf
+# Laravel + Docker + Apache vHost development
 
 ## How to configure?
 
