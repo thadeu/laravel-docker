@@ -30,13 +30,13 @@ docker-compose up --build
 docker-compose run app npm run watch
 ```
 
-## How to access bahs?
+## How to access bash?
 
 ```bash
 docker-compose exec app bash
 ```
 
-## How to host access allow?
+## How to access?
 
 [http://localhost:8080](http://localhost:8080)
 
