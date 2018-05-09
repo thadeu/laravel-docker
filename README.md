@@ -1,12 +1,46 @@
-# Laravel Docker
+# Laravel Docker based in vhost.conf
 
-## How to install?
+## How to configure?
 
 Copy main files to root project
 
-* docker-compose.yml
-* .docker
-* .dockerignore
+* File -> docker-compose.yml
+* Folder -> .docker
+* File -> .dockerignore
+
+# Disclaimer
+
+We need to run command npm install before, how to do?
+
+```bash
+docker-compose run app npm set progess=false && npm install
+```
+
+*npm set progess=false upgrade performance install*
+
+## How to start project?
+
+```bash
+docker-compose up --build
+```
+
+## How to run watch webpack?
+
+```bash
+docker-compose run app npm run watch
+```
+
+## How to access bahs?
+
+```bash
+docker-compose exec app bash
+```
+
+## How to host access allow?
+
+[http://localhost:8080](http://localhost:8080)
+
+We going to enjoy!!
 
 # Contributing
 
